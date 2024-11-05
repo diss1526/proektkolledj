@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    margin: 0;
+    background-image: url('https://img.freepik.com/premium-photo/grainy-gradient-background-red-white-blue-colors-with-soft-faded-watercolor-border-texture_927344-24167.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-container{
+    border: 2px solid black;
+    margin-top:200px;
+    font-size: 20px;
+    background:blur(20px);
+    padding: 30px;
+    border-radius: 52px;
+    box-shadow: 0px 8px 16px black(0.5);
+    width: 350px;
+    text-align: center;
+    position: absolute;
+    color: white;
+    gap: 10px;
+}
+
+input{
+    all: unset;
+    color: black rgba(red, green, blue, alpha);
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+input:is(:focus){
+    border: 2px solid transparent;
+    transition: all 0.5s;
+}      
+
+button{
+    align-items: end;
+    justify-content: end;
+    margin-left: 200px;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 15px;
+    border-color:blue;
+}
+
+button:hover{
+    transition: all 0.5s;
+    border-color: aqua ;
+    background-color: aqua;
+    transform: scale(1.5s);
+}
+button:active{
+    transition: all 0.5s;
+    background-color: red;
+    border-radius: 30px;
+    font-size: 30px;
+    border-color: red;
+}
+
+img{
+    width: 30px;
+    opacity: 50%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+ul{
+    position: relative;
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+ul li a{
+    text-decoration: none; 
+}
+
+ul li a img{
+    filter: invert(1);
+    opacity: 50%;
+}
+ul li a img:hover{
+    opacity: 100%;
+    transition: all 0.7s;
+}
+
